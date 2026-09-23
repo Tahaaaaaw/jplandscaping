@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="forestGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#234732"/>
+      <stop offset="100%" stop-color="#0f2217"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fae188"/>
+      <stop offset="50%" stop-color="#d4af37"/>
+      <stop offset="100%" stop-color="#a67c1e"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+  
+  <!-- Outer Rounded Badge -->
+  <rect width="512" height="512" rx="120" fill="url(#forestGrad)"/>
+  <rect x="20" y="20" width="472" height="472" rx="104" fill="none" stroke="url(#goldGrad)" stroke-width="8" stroke-opacity="0.45"/>
+  
+  <g filter="url(#shadow)">
+    <!-- Decorative Botanical Leaf Accent -->
+    <path d="M305 105 C355 85, 405 115, 395 170 C385 225, 325 225, 305 205 C285 185, 285 125, 305 105 Z" fill="url(#goldGrad)" opacity="0.95"/>
+    <path d="M305 105 C325 145, 355 175, 390 175" fill="none" stroke="#0f2217" stroke-width="6" stroke-linecap="round"/>
+
+    <!-- Letter J -->
+    <path d="M230 155 L230 315 C230 365, 195 395, 150 395 C115 395, 90 375, 80 350 C90 350, 102 342, 110 330 C120 315, 135 355, 155 355 C180 355, 190 335, 190 305 L190 155 Z" fill="url(#goldGrad)"/>
+
+    <!-- Letter P -->
+    <path d="M265 155 L355 155 C410 155, 440 185, 440 230 C440 275, 410 305, 355 305 L305 305 L305 395 L265 395 Z M305 195 L305 265 L350 265 C380 265, 400 250, 400 230 C400 210, 380 195, 350 195 Z" fill="url(#goldGrad)"/>
+  </g>
+</svg>
