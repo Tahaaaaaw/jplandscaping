@@ -58,8 +58,7 @@ export const Route = createFileRoute("/")({
   component: Home,
 });
 
-const PHONE = "01384 598413";
-const MOBILE = "07875 650229";
+const PHONE = "+44 7875 650229";
 const EMAIL = "JPLandscaping5@outlook.com";
 const ADDRESS = "14 Westcott Close, Wordsley, Kingswinford, UK, DY8 5NS";
 const COMPANY_REG = "14644651";
@@ -157,7 +156,7 @@ const FAQS = [
   { q: "Do you offer a guarantee?", a: "Yes — a written 10 year warranty on all works, alongside the manufacturer warranties on the materials we install." },
   { q: "Do I need planning permission?", a: "Usually not for permeable surfaces such as resin bound or gravel. For non-permeable areas over 5m² we design in drainage so your project stays compliant." },
   { q: "Can you work through the winter?", a: "Yes. We work all year round and plan around the weather. Groundworks and most paving can be laid safely in cold conditions." },
-  { q: "How do I get started?", a: "Fill in the quote form, or call us on 01384 598413. We'll arrange a free site visit at a time that suits you, usually within a week." },
+  { q: "How do I get started?", a: "Fill in the quote form, or call us on +44 7875 650229. We'll arrange a free site visit at a time that suits you, usually within a week." },
 ];
 
 const AREAS = [
@@ -835,10 +834,6 @@ function Home() {
                 <li className="flex items-center gap-2">
                   <Phone className="size-4 text-gold shrink-0" />
                   <a href={`tel:${PHONE.replace(/\s/g, "")}`} className="hover:text-gold transition-colors font-bold">{PHONE}</a>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Phone className="size-4 text-gold shrink-0" />
-                  <a href={`tel:${MOBILE.replace(/\s/g, "")}`} className="hover:text-gold transition-colors">{MOBILE}</a>
                 </li>
                 <li className="flex items-center gap-2">
                   <Mail className="size-4 text-gold shrink-0" />
