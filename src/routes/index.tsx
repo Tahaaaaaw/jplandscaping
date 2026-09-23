@@ -575,9 +575,6 @@ function Home() {
                       alt={s.name}
                       className="h-48 sm:h-56 w-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />
-                    <span className="absolute left-3.5 top-3.5 sm:left-4 sm:top-4 rounded-full bg-forest/90 px-2.5 py-0.5 sm:px-3 sm:py-1 text-[0.62rem] sm:text-[0.65rem] font-bold uppercase tracking-[0.18em] text-forest-foreground backdrop-blur-sm shadow-sm">
-                      10 yr warranty
-                    </span>
                   </div>
                   <div className="flex flex-1 flex-col p-5 sm:p-6">
                     <h3 className="text-xl sm:text-2xl font-bold text-foreground">{s.name}</h3>
@@ -776,8 +773,8 @@ function Home() {
       </main>
 
       {/* ---------- Footer ---------- */}
-      <footer className="bg-forest text-forest-foreground pb-24 md:pb-16">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 pt-14 sm:pt-16">
+      <footer className="bg-forest text-forest-foreground">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 py-14 sm:py-16">
           <div className="grid gap-10 sm:grid-cols-2 md:grid-cols-4">
             <div className="sm:col-span-2">
               <a href="#top" className="inline-block group">
@@ -871,18 +868,6 @@ function Home() {
           </div>
         </div>
       </footer>
-
-      {/* ---------- Mobile sticky CTA ---------- */}
-      <div className="fixed inset-x-0 bottom-0 z-50 flex gap-2 border-t border-border bg-background/95 p-2.5 sm:p-3 backdrop-blur md:hidden shadow-lg">
-        <Button asChild variant="forest" className="h-11 sm:h-12 flex-1 font-bold">
-          <a href={`tel:${PHONE.replace(/\s/g, "")}`}>
-            <Phone className="size-4" /> Call
-          </a>
-        </Button>
-        <Button asChild variant="quote" className="h-11 sm:h-12 flex-1 font-bold">
-          <a href="#quote">Get a Quote</a>
-        </Button>
-      </div>
     </div>
   );
 }
