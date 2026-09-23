@@ -65,13 +65,11 @@ const ADDRESS = "14 Westcott Close, Wordsley, Kingswinford, UK, DY8 5NS";
 const COMPANY_REG = "14644651";
 
 const NAV = [
+  { label: "Home", href: "#top" },
   { label: "About", href: "#about" },
   { label: "Services", href: "#services" },
-  { label: "Our Work", href: "#work" },
-  { label: "Why Us", href: "#why" },
-  { label: "The Process", href: "#process" },
-  { label: "Reviews", href: "#reviews" },
-  { label: "FAQ", href: "#faq" },
+  { label: "Portfolio", href: "#work" },
+  { label: "Service Area", href: "#areas" },
   { label: "Contact", href: "#quote" },
 ];
 
